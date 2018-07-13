@@ -665,6 +665,7 @@ START COURSE
 }
 .course__content{
   margin-top: 20px;
+  overflow: hidden;
 }
 .course__content li{
   display: inline-block;
@@ -714,6 +715,12 @@ START COURSE
 }
 .course__content li.course__max span{
   padding-top: 0;
+}
+.course__content li.course__max{
+ float: left;
+}
+.course__content li.course__week{
+  float: right;
 }
 .course__result{
   text-align: center;
@@ -1501,6 +1508,7 @@ START RESPONSIVE
   .course__content{
     max-width: 460px;
     margin: 0 auto;
+    
   }
   .course__content li:nth-child(even),
   .course__content li:nth-child(add){
